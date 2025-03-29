@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Occasia</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Categories Section */
+        .categories {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+            color: rgb(0, 0, 0);
+            min-height: 100vh; /* Ensures it takes up full height */
+        }
+
+        .categories h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        /* Grid Layout */
+        .category-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px; /* Increased spacing */
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        /* Category Box */
+        .category-box {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+            background: white;
+        }
+
+        .category-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-box img {
+            width: 100%;
+            min-height: 250px; /* Ensures proper display */
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        /* Overlay and Button */
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-size: 22px;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 18px;
+            background: #ffcc00;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 8px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff9900;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo"><i class="fas fa-smile"></i> OCCASIA</a>
+    
+        <nav class="navbar">
+            <a class="active" href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="about.html">About</a>
+            <a href="review.html">Review</a>
+            <a href="vendor.html">Vendor</a>
+        </nav>
+    
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+    </header>
+
+    <section class="categories">
+        <h1>Select a Service</h1>
+
+        <div class="category-container">
+
+            <!-- Photography -->
+            <div class="category-box">
+                <img src="photography-img-69.png" alt="Photography">
+                <div class="overlay">
+                    Photography
+                    <br>
+                    <a href="photographer.html" class="btn">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Catering -->
+            <div class="category-box">
+                <img src="catering-img-69.png" alt="Catering">
+                <div class="overlay">
+                    Catering
+                    <br>
+                    <a href="catering.html" class="btn">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Venue Space -->
+            <div class="category-box">
+                <img src="venue-img-69.png" alt="Venue Space">
+                <div class="overlay">
+                    Venue Space
+                    <br>
+                    <a href="venue.html" class="btn">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Decorations -->
+            <div class="category-box">
+                <img src="decoration-img-69.png" alt="Decorations">
+                <div class="overlay">
+                    Decorations
+                    <br>
+                    <a href="decor.html" class="btn">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Entertainment -->
+            <div class="category-box">
+                <img src="entertainment-img-69.jpeg" alt="updating Soon">
+                <div class="overlay">
+                    More
+                    <br>
+                    <a href="entertainment.html" class="btn">Book Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+          <p>&copy; 2025 Occasia. All rights reserved.</p>
+        </div>
+      </footer>
+
+</body>
+</html>
